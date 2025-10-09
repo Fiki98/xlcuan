@@ -158,7 +158,7 @@ BUNDLES = [
                     "family_name": "Kuota Aplikasi Xtra Combo Plus 15GB",
                     "family_code": "45c3a622-8c06-4bb1-8e56-bba1f3434600",
                     "is_enterprise": None,
-                    "variant_name": "Kuota Aplikasi Xtra Combo Plus 15GB",
+                    "variant_name": "Bonus Xtra Combo Plus 15GB",
                     "option_name": "YouTube 15GB",
                     "order": 7
                 },
