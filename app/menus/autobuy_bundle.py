@@ -146,11 +146,11 @@ BUNDLES = [
         }
     },
     {
-        "menu_title": "New Add On Youtube 15GB (XC VIP Plus)",
+        "menu_title": "New Add On Vidio 15GB (XC VIP Plus)",
         "payment_method": "QRIS",
         "display_price": "Rp. 1000",
         "data": {
-            "name": "Add On Youtube 15GB (Gandengan Xtra Combo)",
+            "name": "Add On Vidio 15GB (Gandengan Xtra Combo)",
             "price": "Rp.1000",
             "detail": "Support E-Wallet & QRIS.\\nHanya bisa dibeli kalau punya XCP/XCVP tertentu.\\nTidak akumulasi, beli ulang jika sudah habis.\\nMasa aktif mengikuti paket XCP/XCVP.",
             "packages": [
