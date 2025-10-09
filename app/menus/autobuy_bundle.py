@@ -148,7 +148,7 @@ BUNDLES = [
     {
         "menu_title": "New Add On Youtube 15GB (XC VIP Plus)",
         "payment_method": "QRIS",
-        "display_price": "Rp. 2000",
+        "display_price": "Rp. 1000",
         "data": {
             "name": "Add On Youtube 15GB (Gandengan Xtra Combo)",
             "price": "Rp.1000",
@@ -159,8 +159,8 @@ BUNDLES = [
                     "family_code": "45c3a622-8c06-4bb1-8e56-bba1f3434600",
                     "is_enterprise": False,
                     "variant_name": "Bonus Xtra Combo Plus 15GB",
-                    "option_name": "YouTube 15GB",
-                    "order": 7
+                    "option_name": "Vidio 15GB",
+                    "order": 12
                 },
                 {
                     "family_name": "Work & School",
@@ -445,7 +445,7 @@ def show_autobuy_bundle_menu():
     print_header("✨ Daftar Paket Bundle (Multi) ✨")
     for i, bundle in enumerate(BUNDLES, 1):
         print(f"  [{i}] {bundle['menu_title']}. || {bundle['display_price']}")
-    print("  [5] Unlimited Tiktok Auto pilot Buy (Qris) || Rp. 30000")
+    print("  [6] Unlimited Tiktok Auto pilot Buy (Qris) || Rp. 30000")
     print("\n  [99] Kembali ke Menu Utama")
     print(f"{'-'*55}")
     choice = input("Pilihan > ")
@@ -453,7 +453,7 @@ def show_autobuy_bundle_menu():
     if choice.isdigit() and 1 <= int(choice) <= len(BUNDLES):
         selected_bundle = BUNDLES[int(choice) - 1]
         execute_autobuy(selected_bundle["data"], selected_bundle["payment_method"])
-    elif choice == "5":
+    elif choice == "6":
         execute_unlimited_tiktok_autobuy()
     elif choice == "99":
         return
