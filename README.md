@@ -18,11 +18,11 @@ pkg install git -y
 ```
 3. Clone repository ini
 ```
-git clone https://github.com/baloenk/xldor
+git clone https://github.com/Fiki98/dor
 ```
 4. Masuk ke folder
 ```
-cd xldor
+cd dor
 ```
 5. Jalankan setup
 ```
