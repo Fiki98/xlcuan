@@ -145,6 +145,35 @@ BUNDLES = [
             ]
         }
     },
+    {
+        "menu_title": "New Add On Youtube 15GB (XC VIP Plus)",
+        "payment_method": "QRIS",
+        "display_price": "Rp. 1000 (Refund)",
+        "data": {
+            "name": "Add On Youtube 15GB (Gandengan Xtra Combo)",
+            "price": "Rp.1000",
+            "detail": "Support E-Wallet & QRIS.\\nHanya bisa dibeli kalau punya XCP/XCVP tertentu.\\nTidak akumulasi, beli ulang jika sudah habis.\\nMasa aktif mengikuti paket XCP/XCVP.",
+            "packages": [
+                {
+                    "family_name": "Kuota Aplikasi Xtra Combo Plus 15GB",
+                    "family_code": "45c3a622-8c06-4bb1-8e56-bba1f3434600",
+                    "is_enterprise": None,
+                    "variant_name": "Kuota Aplikasi Xtra Combo Plus 15GB",
+                    "option_name": "YouTube 15GB",
+                    "order": 7
+                },
+                {
+                    "family_name": "Work & School",
+                    "family_code": "5d63dddd-4f90-4f4c-8438-2f005c20151f",
+                    "is_enterprise": False,
+                    "variant_name": "Work & School",
+                    "variant_code": "5b59c55b-0dc7-4f34-a6e9-6afa233ad53b",
+                    "option_name": "Conference 5GB",
+                    "order": 2
+                }
+            ]
+        }
+    },
 ]
 
 def execute_autobuy(bundle_data, payment_method):
