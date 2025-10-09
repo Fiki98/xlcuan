@@ -148,7 +148,7 @@ BUNDLES = [
     {
         "menu_title": "New Add On Youtube 15GB (XC VIP Plus)",
         "payment_method": "QRIS",
-        "display_price": "Rp. 1000 (Refund)",
+        "display_price": "Rp. 2000",
         "data": {
             "name": "Add On Youtube 15GB (Gandengan Xtra Combo)",
             "price": "Rp.1000",
@@ -170,7 +170,16 @@ BUNDLES = [
                     "variant_code": "5b59c55b-0dc7-4f34-a6e9-6afa233ad53b",
                     "option_name": "Conference 5GB",
                     "order": 2
-                }
+                },
+                {
+                    "family_name": "Work & School",
+                    "family_code": "5d63dddd-4f90-4f4c-8438-2f005c20151f",
+                    "is_enterprise": False,
+                    "variant_name": "Work & School",
+                    "variant_code": "5b59c55b-0dc7-4f34-a6e9-6afa233ad53b",
+                    "option_name": "Education 2GB",
+                    "order": 6
+               }
             ]
         }
     },
