@@ -229,7 +229,8 @@ BUNDLES = [
                     "option_name": "Education 2GB",
                     "order": 6
                 } 
-         ]
+            ]
+        }
     },
 ]
 
