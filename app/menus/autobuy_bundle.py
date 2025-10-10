@@ -176,7 +176,7 @@ BUNDLES = [
     },
     {
         "menu_title": "Masa Aktif 1 Tahun 45GB",
-        "payment_method": "QRIS",
+        "payment_method": "E-Wallet & QRIS",
         "display_price": "Rp1000",
         "data": {
             "name": "Masa Aktif 1 Tahun 45GB",
@@ -205,7 +205,7 @@ BUNDLES = [
     },
     {
         "menu_title": "XTRA Combo 100GB",
-        "payment_method": "QRIS",
+        "payment_method": "E-Wallet & QRIS",
         "display_price": "Rp1000",
         "data": {
             "name": "XTRA Combo 100GB",
