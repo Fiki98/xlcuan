@@ -12,31 +12,6 @@ from app.client.balance import settlement_balance
 # Definisi bundle paket
 BUNDLES = [
     {
-        "name": "Masa Aktif 45 Hari + 50GB*",
-        "price": "Rp1000 (refund)",
-        "detail": "Membuat masa aktif menjadi 45 hari dari tanggal pembelian. Tidak bisa akumulasi.\nSupport E-Wallet & QRIS.\nSaldo akan di-refund setelah 10-30 menit.\nPastikan metode scan QRIS support refund.\n\n*Bonus kuota bersama 50GB untuk kartu pengelola XL Satu Home/Fiber.",
-        "packages": [
-          {
-            "family_name": "Kuota Bersama",
-            "family_code": "d018a3ad-172f-433c-b291-f574f4b6fbad",
-            "is_enterprise": false,
-            "variant_name": "Kuota Bersama",
-            "variant_code": "8a5965c2-d29c-48aa-8175-0ef53745d8fa",
-            "option_name": "Kuota HP Sekeluarga 50GB",
-            "order": 1
-          },
-          {
-            "family_name": "Work & School",
-            "family_code": "5d63dddd-4f90-4f4c-8438-2f005c20151f",
-            "is_enterprise": false,
-            "variant_name": "Work & School",
-            "variant_code": "5b59c55b-0dc7-4f34-a6e9-6afa233ad53b",
-            "option_name": "Education 2GB",
-            "order": 6
-          }
-        ]
-      },
-    {
         "menu_title": "Kuota Edukasi +7GB (QRIS)",
         "payment_method": "QRIS",
         "display_price": "Rp. 3500 (Refund)",
@@ -198,6 +173,31 @@ BUNDLES = [
                 } 
             ]
         }
+    },
+    {
+        "name": "Masa Aktif 45 Hari + 50GB*",
+        "price": "Rp1000 (refund)",
+        "detail": "Membuat masa aktif menjadi 45 hari dari tanggal pembelian. Tidak bisa akumulasi.\nSupport E-Wallet & QRIS.\nSaldo akan di-refund setelah 10-30 menit.\nPastikan metode scan QRIS support refund.\n\n*Bonus kuota bersama 50GB untuk kartu pengelola XL Satu Home/Fiber.",
+        "packages": [
+          {
+            "family_name": "Kuota Bersama",
+            "family_code": "d018a3ad-172f-433c-b291-f574f4b6fbad",
+            "is_enterprise": false,
+            "variant_name": "Kuota Bersama",
+            "variant_code": "8a5965c2-d29c-48aa-8175-0ef53745d8fa",
+            "option_name": "Kuota HP Sekeluarga 50GB",
+            "order": 1
+          },
+          {
+            "family_name": "Work & School",
+            "family_code": "5d63dddd-4f90-4f4c-8438-2f005c20151f",
+            "is_enterprise": false,
+            "variant_name": "Work & School",
+            "variant_code": "5b59c55b-0dc7-4f34-a6e9-6afa233ad53b",
+            "option_name": "Education 2GB",
+            "order": 6
+          }
+        ]
     },
 ]
 
@@ -470,7 +470,7 @@ def show_autobuy_bundle_menu():
     print_header("✨ Daftar Paket Bundle (Multi) ✨")
     for i, bundle in enumerate(BUNDLES, 1):
         print(f"  [{i}] {bundle['menu_title']}. || {bundle['display_price']}")
-    print("  [6] Unlimited Tiktok Auto pilot Buy (Qris) || Rp. 30000")
+    print("  [7] Unlimited Tiktok Auto pilot Buy (Qris) || Rp. 30000")
     print("\n  [99] Kembali ke Menu Utama")
     print(f"{'-'*55}")
     choice = input("Pilihan > ")
@@ -478,7 +478,7 @@ def show_autobuy_bundle_menu():
     if choice.isdigit() and 1 <= int(choice) <= len(BUNDLES):
         selected_bundle = BUNDLES[int(choice) - 1]
         execute_autobuy(selected_bundle["data"], selected_bundle["payment_method"])
-    elif choice == "6":
+    elif choice == "7":
         execute_unlimited_tiktok_autobuy()
     elif choice == "99":
         return
