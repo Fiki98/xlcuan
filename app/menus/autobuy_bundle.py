@@ -12,6 +12,31 @@ from app.client.balance import settlement_balance
 # Definisi bundle paket
 BUNDLES = [
     {
+        "name": "Masa Aktif 45 Hari + 50GB*",
+        "price": "Rp1000 (refund)",
+        "detail": "Membuat masa aktif menjadi 45 hari dari tanggal pembelian. Tidak bisa akumulasi.\nSupport E-Wallet & QRIS.\nSaldo akan di-refund setelah 10-30 menit.\nPastikan metode scan QRIS support refund.\n\n*Bonus kuota bersama 50GB untuk kartu pengelola XL Satu Home/Fiber.",
+        "packages": [
+          {
+            "family_name": "Kuota Bersama",
+            "family_code": "d018a3ad-172f-433c-b291-f574f4b6fbad",
+            "is_enterprise": false,
+            "variant_name": "Kuota Bersama",
+            "variant_code": "8a5965c2-d29c-48aa-8175-0ef53745d8fa",
+            "option_name": "Kuota HP Sekeluarga 50GB",
+            "order": 1
+          },
+          {
+            "family_name": "Work & School",
+            "family_code": "5d63dddd-4f90-4f4c-8438-2f005c20151f",
+            "is_enterprise": false,
+            "variant_name": "Work & School",
+            "variant_code": "5b59c55b-0dc7-4f34-a6e9-6afa233ad53b",
+            "option_name": "Education 2GB",
+            "order": 6
+          }
+        ]
+      },
+    {
         "menu_title": "Kuota Edukasi +7GB (QRIS)",
         "payment_method": "QRIS",
         "display_price": "Rp. 3500 (Refund)",
