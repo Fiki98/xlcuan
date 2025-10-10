@@ -204,21 +204,21 @@ BUNDLES = [
         }
     },
     {
-        "menu_title": "XTRA Combo 100GB",
+        "menu_title": "Kuota Utama 100GB",
         "payment_method": "QRIS",
         "display_price": "Rp1000 (refund)",
         "data": {
-            "name": "XTRA Combo 100GB",
+            "name": "Kuota Bersama 100GB",
             "price": "Rp1000",
             "detail": "Membuat masa aktif menjadi 1 Tahun/12 Bulan. Tidak bisa akumulasi.\nSupport E-Wallet & QRIS..\nPastikan metode scan QRIS support.\n\nPerpanjang Masa Aktif Perbulan Selama 12 Bulan.",
             "packages": [
                 {
-                    "family_name": "Special For You",
-                    "family_code": "6fda76ee-e789-4897-89fb-9114da47b805",
+                    "family_name": "Kuota Bersama Prepaid",
+                    "family_code": "434a1449-1d18-43f8-b059-10b3d5e3f5c3",
                     "is_enterprise": False,
-                    "variant_name": "Special For You",
-                    "option_name": "XTRA Combo 100GB",
-                    "order": 10
+                    "variant_name": "Kuota Bersama Prepaid",
+                    "option_name": "Kuota Bersama 100GB",
+                    "order": 1
                 },
                 {
                     "family_name": "Work & School",
