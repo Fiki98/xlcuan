@@ -204,8 +204,8 @@ BUNDLES = [
         }
     },
     {
-            "name": "XTRA Combo 100GB",
-            "price": "Rp1000",
+            "menu_title": "XTRA Combo 100GB",
+            "display_price": "Rp1000 (refund)",
             "detail": "Membuat masa aktif menjadi 1 Tahun/12 Bulan. Tidak bisa akumulasi.\nSupport E-Wallet & QRIS..\nPastikan metode scan QRIS support.\n\nPerpanjang Masa Aktif Perbulan Selama 12 Bulan.",
             "packages": [
                 {
