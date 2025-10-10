@@ -174,6 +174,35 @@ BUNDLES = [
             ]
         }
     },
+    {
+        "menu_title": "Masa Aktif 1 Tahun 45GB",
+        "payment_method": "QRIS",
+        "display_price": "Rp1000",
+        "data": {
+            "name": "Masa Aktif 1 Tahun 45GB",
+            "price": "Rp1000",
+            "detail": "Membuat masa aktif menjadi 1 Tahun/12 Bulan. Tidak bisa akumulasi.\nSupport E-Wallet & QRIS..\nPastikan metode scan QRIS support.\n\nPerpanjang Masa Aktif Perbulan Selama 12 Bulan.",
+            "packages": [
+                {
+                    "family_name": "Bundling",
+                    "family_code": "6bcc96f4-f196-4e8f-969f-e45a121d21bd",
+                    "is_enterprise": False,
+                    "variant_name": "Bundling",
+                    "option_name": "45GB Setahun",
+                    "order": 2
+                },
+                {
+                    "family_name": "Work & School",
+                    "family_code": "5d63dddd-4f90-4f4c-8438-2f005c20151f",
+                    "is_enterprise": False,
+                    "variant_name": "Work & School",
+                    "variant_code": "5b59c55b-0dc7-4f34-a6e9-6afa233ad53b",
+                    "option_name": "Education 2GB",
+                    "order": 6
+                } 
+            ]
+        }
+    },
 ]
 
 def execute_autobuy(bundle_data, payment_method):
@@ -445,7 +474,7 @@ def show_autobuy_bundle_menu():
     print_header("✨ Daftar Paket Bundle (Multi) ✨")
     for i, bundle in enumerate(BUNDLES, 1):
         print(f"  [{i}] {bundle['menu_title']}. || {bundle['display_price']}")
-    print("  [6] Unlimited Tiktok Auto pilot Buy (Qris) || Rp. 30000")
+    print("  [7] Unlimited Tiktok Auto pilot Buy (Qris) || Rp. 30000")
     print("\n  [99] Kembali ke Menu Utama")
     print(f"{'-'*55}")
     choice = input("Pilihan > ")
@@ -453,7 +482,7 @@ def show_autobuy_bundle_menu():
     if choice.isdigit() and 1 <= int(choice) <= len(BUNDLES):
         selected_bundle = BUNDLES[int(choice) - 1]
         execute_autobuy(selected_bundle["data"], selected_bundle["payment_method"])
-    elif choice == "6":
+    elif choice == "7":
         execute_unlimited_tiktok_autobuy()
     elif choice == "99":
         return
