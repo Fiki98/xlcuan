@@ -215,7 +215,7 @@ BUNDLES = [
                 {
                     "family_name": "Kuota Bersama Prepaid",
                     "family_code": "434a1449-1d18-43f8-b059-10b3d5e3f5c3",
-                    "is_enterprise": False,
+                    "is_enterprise": None,
                     "variant_name": "Kuota Bersama Prepaid",
                     "option_name": "Kuota Bersama 100GB",
                     "order": 1
@@ -244,7 +244,7 @@ BUNDLES = [
                 {
                     "family_name": "Unlimited Turbo",
                     "family_code": "08a3b1e6-8e78-4e45-a540-b40f06871cfe",
-                    "is_enterprise": False,
+                    "is_enterprise": None,
                     "variant_name": "For Xtra Combo",
                     "option_name": "iFlix",
                     "order": 10
