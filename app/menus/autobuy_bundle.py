@@ -204,21 +204,21 @@ BUNDLES = [
         }
     },
     {
-        "menu_title": "Kuota Utama 100GB",
+        "menu_title": "Kuota Utama 6GB",
         "payment_method": "QRIS",
         "display_price": "Rp1000 (refund)",
         "data": {
-            "name": "Kuota Bersama 100GB",
+            "name": "Kuota Bersama 6GB",
             "price": "Rp1000",
-            "detail": "Membuat masa aktif menjadi 1 Tahun/12 Bulan. Tidak bisa akumulasi.\nSupport E-Wallet & QRIS..\nPastikan metode scan QRIS support.\n\nPerpanjang Masa Aktif Perbulan Selama 12 Bulan.",
+            "detail": "Support E-Wallet & QRIS.",
             "packages": [
                 {
-                    "family_name": "Kuota Bersama Prepaid",
-                    "family_code": "434a1449-1d18-43f8-b059-10b3d5e3f5c3",
+                    "family_name": "Bonus For You",
+                    "family_code": "3f4c0d03-c1b8-451b-a001-f3786f36351b",
                     "is_enterprise": False,
-                    "variant_name": "Kuota Bersama Prepaid",
-                    "option_name": "Kuota Bersama 100GB",
-                    "order": 1
+                    "variant_name": "Bonus For You",
+                    "option_name": "Xtra Kuota 6GB",
+                    "order": 8
                 },
                 {
                     "family_name": "Work & School",
