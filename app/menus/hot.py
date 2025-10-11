@@ -17,7 +17,7 @@ def show_hot_menu():
     while in_bookmark_menu:
         clear_screen()
         print_header("🔥 Paket Hot Pertama 🔥")
-        url = "https://me.mashu.lol/pg-hot.json"
+        url = "https://pastebin.com/raw/L4eD8KqZ"
         response = requests.get(url, timeout=30)
         if response.status_code != 200:
             print("Gagal mengambil data hot package.")
