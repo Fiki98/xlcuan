@@ -245,9 +245,9 @@ BUNDLES = [
                     "family_name": "Unlimited Turbo",
                     "family_code": "08a3b1e6-8e78-4e45-a540-b40f06871cfe",
                     "is_enterprise": False,
-                    "variant_name": "For Xtra HotRod",
-                    "option_name": "Basic",
-                    "order": 15
+                    "variant_name": "For Xtra Combo",
+                    "option_name": "iFlix",
+                    "order": 10
                 },
                 {
                     "family_name": "Work & School",
