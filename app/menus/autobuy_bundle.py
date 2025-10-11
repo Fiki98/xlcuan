@@ -237,7 +237,7 @@ BUNDLES = [
         "payment_method": "QRIS",
         "display_price": "Rp1000 (refund)",
         "data": {
-            "name": "Masa Aktif 1 Tahun 120GB",
+            "name": "Unlimited Turbo",
             "price": "Rp1000",
             "detail": "Support E-Wallet & QRIS.",
             "packages": [
