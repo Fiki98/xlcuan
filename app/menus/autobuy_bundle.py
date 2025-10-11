@@ -233,7 +233,7 @@ BUNDLES = [
         }
     },
     {
-        "menu_title": "Masa Aktif 1 Tahun 120GB",
+        "menu_title": "Unlimited Turbo",
         "payment_method": "QRIS",
         "display_price": "Rp1000 (refund)",
         "data": {
@@ -242,12 +242,12 @@ BUNDLES = [
             "detail": "Support E-Wallet & QRIS.",
             "packages": [
                 {
-                    "family_name": "Akhir Tahun Bareng XL",
-                    "family_code": "e597b4ea-b253-46fd-bb4f-05114d2eb74c",
+                    "family_name": "Unlimited Turbo",
+                    "family_code": "08a3b1e6-8e78-4e45-a540-b40f06871cfe",
                     "is_enterprise": False,
-                    "variant_name": "Special Offer",
-                    "option_name": "120GB Setahun",
-                    "order": 1
+                    "variant_name": "For Xtra HotRod",
+                    "option_name": "Basic",
+                    "order": 15
                 },
                 {
                     "family_name": "Work & School",
