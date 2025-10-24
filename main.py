@@ -54,10 +54,10 @@ def show_main_menu(number, balance, balance_expired_at, quota_info, profile_info
     print(f"  {Style.CYAN}[4]{Style.RESET}. 🔥 Beli Paket Hot Pertama")
     print(f"  {Style.CYAN}[5]{Style.RESET}. 🔥 Beli Paket Hot Kedua")
     print(f"  {Style.CYAN}[6]{Style.RESET}. 🛒 Beli Paket Bundle (Multi)")
-    print(f"  {Style.CYAN}[8]{Style.RESET}. 🔍 Beli Paket Berdasarkan Family Code")
-    print(f"  {Style.CYAN}[9]{Style.RESET}. 🔖 Bookmark Paket")
-    print(f"  {Style.CYAN}[10]{Style.RESET}. 📚 Bookmark Family Code")
-    print(f"  {Style.CYAN}[11]{Style.RESET}. 🚪 Keluar Aplikasi")
+    print(f"  {Style.CYAN}[7]{Style.RESET}. 🔍 Beli Paket Berdasarkan Family Code")
+    print(f"  {Style.CYAN}[8]{Style.RESET}. 🔖 Bookmark Paket")
+    print(f"  {Style.CYAN}[9]{Style.RESET}. 📚 Bookmark Family Code")
+    print(f"  {Style.CYAN}[99]{Style.RESET}. 🚪 Keluar Aplikasi")
     print(f"{'-'*55}")
 
 show_menu = True
@@ -129,22 +129,22 @@ def main():
                 show_hot_menu2()
             elif choice == "6":
                 show_autobuy_bundle_menu()
-            elif choice == "8":
+            elif choice == "7":
                 family_code = input("Enter family code (or '99' to cancel): ")
                 if family_code == "99":
                     continue
                 get_packages_by_family(family_code)
-            elif choice == "9":
+            elif choice == "8":
                 show_bookmark_menu()
-            elif choice == "10":
+            elif choice == "9":
                 show_family_bookmark_menu()            
-            elif choice == "11":
+            elif choice == "99":
                 print("Exiting the application.")
                 sys.exit(0)
             elif choice.lower() == "t":
                 from app.menus.autobuy_bundle import execute_unlimited_tiktok_autobuy
                 execute_unlimited_tiktok_autobuy()
-            elif choice.lower() == "7":
+            elif choice.lower() == "10":
                 special_packages = segments_data.get("special_packages")
                 if special_packages:
                     show_special_for_you_menu(active_user["tokens"], special_packages)
