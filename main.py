@@ -54,7 +54,6 @@ def show_main_menu(number, balance, balance_expired_at, quota_info, profile_info
     print(f"  {Style.CYAN}[4]{Style.RESET}. 🔥 Beli Paket Hot Pertama")
     print(f"  {Style.CYAN}[5]{Style.RESET}. 🔥 Beli Paket Hot Kedua")
     print(f"  {Style.CYAN}[6]{Style.RESET}. 🛒 Beli Paket Bundle (Multi)")
-    print(f"  {Style.CYAN}[7]{Style.RESET}. 🔥 Beli Special Diskon Untukmu")
     print(f"  {Style.CYAN}[8]{Style.RESET}. 🔍 Beli Paket Berdasarkan Family Code")
     print(f"  {Style.CYAN}[9]{Style.RESET}. 🔖 Bookmark Paket")
     print(f"  {Style.CYAN}[10]{Style.RESET}. 📚 Bookmark Family Code")
