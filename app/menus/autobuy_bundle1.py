@@ -325,9 +325,9 @@ def execute_unlimited_vidio_autobuy():
             return
 
         # 5. Timer 10 menit
-        print("\nTunggu waktu 10 Menit, jangan tutup Script/Termux")
+        print("\nTunggu waktu 2 Menit, jangan tutup Script/Termux")
         try:
-            for i in range(600, 0, -1):
+            for i in range(120, 0, -1):
                 print(f"\r{Style.YELLOW}Waktu tersisa: {i//60:02d}:{i%60:02d}{Style.RESET}", end="")
                 time.sleep(1)
         except KeyboardInterrupt:
@@ -352,8 +352,8 @@ def execute_unlimited_vidio_autobuy():
         "family_code": "08a3b1e6-8e78-4e45-a540-b40f06871cfe",
         "is_enterprise": None,
         "variant_name": "For Xtra Combo",
-        "option_name": "Vidio",
-        "order": 11
+        "option_name": "Netflix",
+        "order": 5
     }
 
     package_detail_tiktok = get_package_details(
