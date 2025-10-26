@@ -143,6 +143,7 @@ def main():
             elif choice == "7":
                 show_bookmark_menu()
             elif choice == "8":
+                show_bookmark_menu()
             elif choice == "99":
                 print("Exiting the application.")
                 sys.exit(0)
