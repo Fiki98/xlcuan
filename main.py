@@ -52,7 +52,6 @@ def show_main_menu(number, balance, balance_expired_at, quota_info, profile_info
         print(f"  - {notif.get('title', '')}: {notif.get('body', '')}")
     
     print(f"  {Style.CYAN}[T]{Style.YELLOW} 🔥Unlimited Turbo Tiktok New Method | {Style.GREEN}💰Rp.30000{Style.RESET}")
-    print(f"  {Style.CYAN}[V]{Style.YELLOW} 🔥Unlimited Turbo Vidio New Method | {Style.GREEN}💰Rp.30000{Style.RESET}")
     print(f"{'-'*55}")
 
     print(f"{'-'*55}")
@@ -63,8 +62,7 @@ def show_main_menu(number, balance, balance_expired_at, quota_info, profile_info
     print(f"  {Style.CYAN}[4]{Style.RESET}. 🔥 Beli Paket Hot Pertama")
     print(f"  {Style.CYAN}[5]{Style.RESET}. 🔥 Beli Paket Hot Kedua")
     print(f"  {Style.CYAN}[6]{Style.RESET}. 🔍 Beli Paket Berdasarkan Family Code")
-    print(f"  {Style.CYAN}[7]{Style.RESET}. 🔖 Bookmark Paket")
-    print(f"  {Style.CYAN}[8]{Style.RESET}. 📚 Bookmark Family Code")
+    print(f"  {Style.CYAN}[7]{Style.RESET}. 📚 Bookmark Family Code")
     print(f"  {Style.CYAN}[99]{Style.RESET}. 🚪 Keluar Aplikasi")
     print(f"{'-'*55}")
 
@@ -142,17 +140,12 @@ def main():
                 get_packages_by_family(family_code)
             elif choice == "7":
                 show_bookmark_menu()
-            elif choice == "8":
-                show_bookmark_menu()
             elif choice == "99":
                 print("Exiting the application.")
                 sys.exit(0)
             elif choice.lower() == "t":
                 from app.menus.autobuy_bundle import execute_unlimited_tiktok_autobuy
                 execute_unlimited_tiktok_autobuy()
-            elif choice.lower() == "v":
-                from app.menus.autobuy_bundle1 import execute_unlimited_vidio_autobuy
-                execute_unlimited_vidio_autobuy()
             elif choice.lower() == "s":
                 special_packages = segments_data.get("special_packages")
                 if special_packages:
