@@ -352,8 +352,8 @@ def execute_unlimited_vidio_autobuy():
         "family_code": "08a3b1e6-8e78-4e45-a540-b40f06871cfe",
         "is_enterprise": None,
         "variant_name": "For Xtra Combo",
-        "option_name": "Netflix",
-        "order": 5
+        "option_name": "Vidio",
+        "order": 11
     }
 
     package_detail_tiktok = get_package_details(
